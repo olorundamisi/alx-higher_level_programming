@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 0_add.py
-# Olorundamisi Dunmade <www.github.com/olorundamisi>
+# Olorundamisi Dunmade <github.com/olorundamisi>
 
 
 if __name__ == "__main__":
@@ -10,4 +10,5 @@ if __name__ == "__main__":
 
     a = 1
     b = 2
+
     print("{} + {} = {}".format(a, b, add(a, b)))
