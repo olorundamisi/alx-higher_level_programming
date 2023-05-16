@@ -18,7 +18,7 @@ void print_python_list_info(PyObject *p)
 {
 	PyObject *object;
 
-	const int size = Py_SIZE(p);
+	static const int size = Py_SIZE(p);
 	const int alloced = ((PyListObject *)p)->allocated;
 	int i;
 
