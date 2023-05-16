@@ -1,6 +1,5 @@
 /**
  * File: 100-print_python_list_info.c
- *
  * Author: Olorundamisi Dunmade <github.com/olorundamisi>
  */
 
@@ -10,7 +9,6 @@
 
 /**
  * print_python_list_info - Print basic information about Python lists.
- *
  * @p: A PyObject list.
  */
 
@@ -18,7 +16,7 @@ void print_python_list_info(PyObject *p)
 {
 	PyObject *object;
 
-	static const int size = Py_SIZE(p);
+	const int size = Py_SIZE(p);
 	const int alloced = ((PyListObject *)p)->allocated;
 	int i;
 
