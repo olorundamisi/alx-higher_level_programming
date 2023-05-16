@@ -1,4 +1,4 @@
-/**
+/*
  * File: 13-is_palindrome.c
  * Author: Olorundamisi Dunmade <github.com/olorundamisi>
  */
