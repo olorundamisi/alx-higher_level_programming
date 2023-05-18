@@ -22,9 +22,9 @@ void print_python_list(PyObject *p)
 	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
 
-	const char *type;
-	const int alloced = list->allocated;
+	char *type;
 	const int size = var->ob_size;	/* Is this different from Py_SIZE(p); */
+	const int alloced = list->allocated;
 	int i;
 
 	printf("[*] Python list info\n");
@@ -52,8 +52,8 @@ void print_python_bytes(PyObject *p)
 	PyBytesObject *bytes = (PyBytesObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
 
-	unsigned char size;
 	unsigned char i;
+	unsigned char size;
 
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes") != 0)
@@ -75,8 +75,8 @@ void print_python_bytes(PyObject *p)
 	{
 		printf("%02hhx", bytes->ob_sval[i]);
 		if (i == (size - 1))
-			putchar('\n');
+			printf("\n");
 		else
-			putchar(' ');
+			printf(" ");
 	}
 }
