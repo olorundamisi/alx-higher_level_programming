@@ -9,26 +9,26 @@ def roman_to_int(roman_string):
     if (not isinstance(roman_string, str) or roman_string is None):
         return (0)
 
-    roman_dict = {
+    rms = roman_string
+
+    rmd = {
             "I": 1,
             "V": 5,
             "X": 10,
             "L": 50,
             "C": 100,
             "D": 500,
-            "M": 1000
-            }
+            "M": 1000 }
 
     arabic_int = 0
 
-    for i in range(len(roman_string)):
-        if roman_dict.get(roman_string[i], 0) == 0:
+    for i in range(len(rms)):
+        if rmd.get(rms[i], 0) == 0:
             return (0)
 
-        neg = roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]
-        if (i != (len(roman_string) - 1) and neg):
-            arabic_int += roman_dict[roman_string[i]] * -1
+        if (i != (len(rms) - 1) and rmd[rms[i]] < rmd[rms[i + 1]]):
+            arabic_int += rmd[rms[i]] * -1
         else:
-            arabic_int += roman_dict[roman_string[i]]
+            arabic_int += rmd[rms[i]]
 
     return (arabic_int)
