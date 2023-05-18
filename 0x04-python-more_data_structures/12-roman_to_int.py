@@ -6,7 +6,9 @@
 def roman_to_int(roman_string):
     """Convert a roman numeral to an arabic integer."""
 
-    if (not isinstance(roman_string, str) or roman_string is None):
+    roman_str = roman_string
+
+    if (not isinstance(roman_str, str) or roman_str is None):
         return (0)
 
     roman_dict = {
@@ -21,14 +23,14 @@ def roman_to_int(roman_string):
 
     arabic_int = 0
 
-    for i in range(len(roman_string)):
-        if roman_dict.get(roman_string[i], 0) == 0:
+    for i in range(len(roman_str)):
+        if roman_dict.get(roman_str[i], 0) == 0:
             return (0)
 
-        if (i != (len(roman_string) - 1) and
-                roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
-                arabic_int += roman_dict[roman_string[i]] * -1
+        if (i != (len(roman_str) - 1) and
+                roman_dict[roman_str[i]] < roman_dict[roman_str[i + 1]]):
+                arabic_int += roman_dict[roman_str[i]] * -1
         else:
-            arabic_int += roman_dict[roman_string[i]]
+            arabic_int += roman_dict[roman_str[i]]
 
     return (arabic_int)
