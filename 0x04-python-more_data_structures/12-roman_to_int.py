@@ -4,8 +4,7 @@
 
 
 def roman_to_int(roman_string):
-    """Convert a roman numeral to an arabic numeral."""
-
+    """Converts a roman numeral to an integer."""
     if (not isinstance(roman_string, str) or
             roman_string is None):
         return (0)
@@ -31,5 +30,4 @@ def roman_to_int(roman_string):
 
         else:
             num += roman_dict[roman_string[i]]
-
     return (num)
