@@ -36,7 +36,7 @@ void print_python_list(PyObject *p)
 
 		printf("Element %d: %s\n", i, type);
 		if (strcmp(type, "bytes") == 0)
-			print_python_bytes( list->ob_item[i] );
+			print_python_bytes(list->ob_item[i]);
 	}
 }
 
@@ -64,7 +64,7 @@ void print_python_bytes(PyObject *p)
 	printf("  size: %ld\n", var->ob_size);
 	printf("  trying string: %s\n", bytes->ob_sval);
 
-	if ( var->ob_size > 10 )
+	if (var->ob_size > 10)
 		size = 10;
 	else
 		size = var->ob_size + 1;
