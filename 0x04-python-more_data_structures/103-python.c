@@ -22,15 +22,14 @@ void print_python_list(PyObject *p)
 	PyVarObject *var = (PyVarObject *)p;
 
 	const char *type;
-	int size, alloc;
+	const int size = var->ob_size;
+	const int alloced = list->allocated;
 	int i;
 
-	size = var->ob_size;
-	alloc = list->allocated;
 
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %d\n", size);
-	printf("[*] Allocated = %d\n", alloc);
+	printf("[*] Allocated = %d\n", alloced);
 
 	for (i = 0; i < size; i++)
 	{
