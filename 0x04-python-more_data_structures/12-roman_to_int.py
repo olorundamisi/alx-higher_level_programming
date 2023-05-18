@@ -18,11 +18,15 @@ def roman_to_int(roman_string):
             "L": 50,
             "C": 100,
             "D": 500,
-            "M": 1000 }
+            "M": 1000
+    }
 
     arabic_int = 0
 
     for i in range(len(rms)):
+        if rmd.get(rms[i], 0) == 0:
+            return (0)
+
         if (i != (len(rms) - 1) and rmd[rms[i]] < rmd[rms[i + 1]]):
             arabic_int += rmd[rms[i]] * -1
         else:
