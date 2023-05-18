@@ -22,7 +22,7 @@ void print_python_list(PyObject *p)
 	PyVarObject *var = (PyVarObject *)p;
 
 	const char *type;
-	const int size = var->ob_size;
+	const int size = var->ob_size;	/* Py_SIZE(p); */
 	const int alloced = list->allocated;
 	int i;
 
