@@ -38,6 +38,7 @@ void print_python_list(PyObject *p)
 		printf("Element %d: %s\n", i, type);
 		if (strcmp(type, "bytes") == 0)
 			print_python_bytes(list->ob_item[i]);
+	}
 }
 
 
