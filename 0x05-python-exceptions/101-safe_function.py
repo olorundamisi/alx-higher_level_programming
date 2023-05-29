@@ -10,7 +10,7 @@ def safe_function(fct, *args):
 
     Args:
         fct: The function to execute.
-        args: Arguments for the function `fct`.
+        args: Arguments for the function fct.
 
     Returns:
         If an Error occurs - None.
