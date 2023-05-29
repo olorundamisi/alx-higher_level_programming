@@ -4,11 +4,12 @@
 
 import sys
 
+
 def safe_print_integer_err(value):
     """Print an integer with "{:d}".format().
 
-    If an Error message is caught, the corresponding error message is printed
-    to standard error.
+    If an Error message is caught, the corresponding error message is
+    printed to standard error.
 
     Args:
         value (int): The integer to print.

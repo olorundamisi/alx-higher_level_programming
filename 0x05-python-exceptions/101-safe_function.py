@@ -4,6 +4,7 @@
 
 import sys
 
+
 def safe_function(fct, *args):
     """Execute a function safely.
 
