@@ -10,7 +10,7 @@ def safe_function(fct, *args):
 
     Args:
         fct: The function to execute.
-        args: Arguments for fct.
+        args: Arguments for function `fct`.
 
     Returns:
         If an error occurs - None.
@@ -19,6 +19,6 @@ def safe_function(fct, *args):
     try:
         result = fct(*args)
         return (result)
-    except:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
+    except Exception as error:
+        print("Exception: {}".format(error), file=sys.stderr)
         return (None)
