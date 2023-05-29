@@ -2,7 +2,6 @@
 # 102-magic_calculation.py
 # Olorundamisi Dunmade <github.com/olorundamisi>
 
-
 def magic_calculation(a, b):
     result = 0
     for i in range(1, 3):
