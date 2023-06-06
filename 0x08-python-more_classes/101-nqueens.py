@@ -62,7 +62,7 @@ def xout(board, row, col):
     # X out all forward spots
     for c in range(col + 1, len(board)):
         board[row][c] = "x"
-        
+
     # X out all backwards spots
     for c in range(col - 1, -1, -1):
         board[row][c] = "x"
@@ -90,7 +90,7 @@ def xout(board, row, col):
             break
         board[r][c]
         c -= 1
-        
+
     # X out all spots diagonally up to the right
     c = col + 1
     for r in range(row - 1, -1, -1):
