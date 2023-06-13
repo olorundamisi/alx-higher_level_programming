@@ -1,13 +1,19 @@
+# 7-base_geometry.txt
+# Olorundamisi Dunmade <github.com/olorundamisi>
+
 The ``7-base_geometry`` module
 ==============================
 
-Using ``BaseGeometry``
-----------------------
+
+Insantiation
+------------
 
 Importing class from the module:
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
+Area
+----
 Trying to print the area
     >>> bg = BaseGeometry()
     >>> bg.area()
@@ -16,6 +22,8 @@ Trying to print the area
     Exception: area() is not implemented
 
 
+Invalid Arguments
+-----------------
 Trying to pass a non-integer argument
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", "5")
@@ -89,6 +97,7 @@ Passing two arguments to area method
     Traceback (most recent call last):
     	      ...
     TypeError: area() takes 1 positional argument but 3 were given
+
 
 Passing tuple to method
     >>> bg = BaseGeometry()

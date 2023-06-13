@@ -1,6 +1,8 @@
-======================
-Tests executed with: python3 -m doctest -v ./tests/1-my_list.txt
-======================
+# 1-my_list.txt
+# Olorundamisi Dunmade <github.com/olorundamisi>
+
+The ``1-my_list`` module
+==============================
 Basic Usage, list
 	>>> MyList = __import__('1-my_list').MyList
 	>>> my_list = MyList()
