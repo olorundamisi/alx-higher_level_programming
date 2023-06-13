@@ -1,5 +1,5 @@
 ======================
-TESTS FOR 1-my_list.py
+Tests executed with: python3 -m doctest -v ./tests/1-my_list.txt
 ======================
 Basic Usage, list
 	>>> MyList = __import__('1-my_list').MyList
