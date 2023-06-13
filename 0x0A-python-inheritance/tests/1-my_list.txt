@@ -1,37 +1,32 @@
 ======================
 Tests executed with: python3 -m doctest -v ./tests/1-my_list.txt
 ======================
-Basic Usage, list
-	>>> MyList = __import__('1-my_list').MyList
-	>>> my_list = MyList()
-	>>> my_list.append(-40)
-	>>> my_list.append(40)
-	>>> my_list.append(0)
-	>>> print(my_list)
-	[-40, 40, 0]
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(-40)
+>>> my_list.append(40)
+>>> my_list.append(0)
+>>> print(my_list)
+[-40, 40, 0]
 
-Negative unordered ints
-	>>> my_list.print_sorted()
-	[-40, 0, 40]
+>>> my_list.print_sorted()
+[-40, 0, 40]
 
-	>>> my_list = MyList()
-	>>> my_list.append(4000000000000000)
-	>>> my_list.append(0)
-	>>> my_list.print_sorted()
-	[0, 4000000000000000]
+>>> my_list = MyList()
+>>> my_list.append(4000000000000000)
+>>> my_list.append(0)
+>>> my_list.print_sorted()
+[0, 4000000000000000]
 
-Print unsorted list
-	>>> print(my_list)
-	[4000000000000000, 0]
+>>> print(my_list)
+[4000000000000000, 0]
 
-Empty list given or no parameters given:
-    >>> my_list = MyList([])
-	>>> my_list.print_sorted()
-	[]
+>>> my_list = MyList([])
+>>> my_list.print_sorted()
+[]
 
-Unordered list with different data types given as parameters:
-    >>> my_list = MyList(["20", "five", 7, 2, 1])
-    >>> my_list.print_sorted()
-    Traceback (most recent call last):
-      ...
-    TypeError: '<' not supported between instances of 'int' and 'str'
+>>> my_list = MyList(["20", "five", 7, 2, 1])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+  ...
+TypeError: '<' not supported between instances of 'int' and 'str'
