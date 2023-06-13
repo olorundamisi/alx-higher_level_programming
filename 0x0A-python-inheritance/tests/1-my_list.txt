@@ -131,25 +131,25 @@ Note that lists of strings are sorted lexographically.
 ::
 
     >>> my_list = MyList()
-    >>> my_list.append("Brennan")
-    >>> my_list.append("Poppy")
-    >>> my_list.append("School")
-    >>> my_list.append("Holberton")
-    >>> my_list.append("Betty")
+    >>> my_list.append("Brandon")
+    >>> my_list.append("Prepare")
+    >>> my_list.append("Scout")
+    >>> my_list.append("Herbert")
+“   >>> my_list.append("Belated")
     >>> print(my_list)
-    ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
+    ['Brandon', 'Prepare', 'Scout', 'Herbert', 'Belated']
 
 ::
 
     >>> my_list.print_sorted()
-    ['Betty', 'Brennan', 'Holberton', 'Poppy', 'School']
+    ['Belated', 'Brandon', 'Herbert', 'Prepare', 'Scout']
 
-Another friendly reminder that the original list is unaltered :)
+Note that the original list remains unaltered.
 
 ::
 
     >>> print(my_list)
-    ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
+    ['Brandon', 'Prepare', 'Scout', 'Herbert', 'Belated']
 
 Nothing to sort with empty lists.
 
@@ -164,7 +164,7 @@ will be raised.
 
 ::
 
-    >>> my_list = MyList([1, "Betty", "Holberton", 5])
+    >>> my_list = MyList([1, "Belated", "Herbert", 5])
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
