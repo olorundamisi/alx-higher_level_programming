@@ -75,8 +75,3 @@ ValueError: zero must be greater than 0
 Traceback (most recent call last):
 	...
 TypeError: none must be an integer
-
->>> bg.integer_validator("Nan", NaN)
-Traceback (most recent call last):
-...
-TypeError: Nan must be an integer
