@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-# 1-my_list.py
-# Olorundamisi Dunmade <github.com/olorundamisi>
-"""Defines an inherited list class MyList."""
 
 
 class MyList(list):
