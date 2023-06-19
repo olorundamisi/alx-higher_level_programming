@@ -5,6 +5,7 @@ Python by creating a set of 3 classes that are connected. I have used these
 classes to represent rectangles and squares.
 A personally formulated test suite using `unittest` to test the functionality
 for each of the three classes is present.
+The three classes created are `Base`, `Rectangle`, & `Square`
 
 The three classes involved make use of the following tools:
 * Import
