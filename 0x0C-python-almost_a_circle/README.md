@@ -18,7 +18,7 @@ The three classes involved make use of the following tools:
 * JSON and CSV serialization/deserialization
 * Unittesting
 
-## Classes :cl:
+## Classes
 
 ### Base
 
