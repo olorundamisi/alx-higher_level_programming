@@ -1,1 +1,1 @@
-# Python - Higher Level Programming
+# Python - Higher-Level Programming
