@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # 2-is_same_class.py
 # Olorundamisi Dunmade <github.com/olorundamisi>
+
 """Defines a class-checking function."""
 
 
